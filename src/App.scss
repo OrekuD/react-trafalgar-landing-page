@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MuliBold";
+  src: url(./assets/fonts/Muli-Bold.ttf);
+}
+
+@font-face {
+  font-family: "MuliRegular";
+  src: url(./assets/fonts/Muli.ttf);
+}
+
+@font-face {
+  font-family: "MuliLight";
+  src: url(./assets/fonts/Muli-Light.ttf);
+}
+
+@font-face {
+  font-family: "MuliSemiBold";
+  src: url(./assets/fonts/Muli-SemiBold.ttf);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
