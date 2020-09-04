@@ -1,0 +1,96 @@
+.testimonial {
+  .card {
+    width: 85%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 50px;
+    background-image: linear-gradient(to right, #5a98f2, #67c3f3);
+    position: relative;
+
+    .top-pattern {
+      position: absolute;
+      top: -18px;
+      right: -34px;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .bottom-pattern {
+      position: absolute;
+      left: -40px;
+      bottom: 30px;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      z-index: -1;
+    }
+
+    p {
+      color: white !important;
+    }
+
+    .hr {
+      background-color: white;
+    }
+
+    .review {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+
+      img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: contain;
+        border: 3px solid white;
+        margin-right: 30px;
+      }
+
+      div {
+        .name {
+          font-family: "MuliBold";
+          font-size: 20px;
+        }
+
+        .small-label {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+
+      .small-label {
+        width: 45%;
+        margin-left: 60px;
+      }
+    }
+  }
+
+  .active-review-indicator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin: 0 12px;
+    }
+
+    .svg {
+      &:first-of-type {
+        margin-right: 100px;
+      }
+
+      &:last-of-type {
+        margin-left: 100px;
+      }
+    }
+  }
+}

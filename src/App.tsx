@@ -1,6 +1,13 @@
 import React from "react";
 import "./App.scss";
-import { Header, Footer, Banner, Services, Offers } from "./components";
+import {
+  Header,
+  Footer,
+  Banner,
+  Services,
+  Offers,
+  Testimonial,
+} from "./components";
 
 function App() {
   return (
@@ -10,6 +17,7 @@ function App() {
         <Banner />
         <Services />
         <Offers />
+        <Testimonial />
       </div>
       <Footer />
     </div>
