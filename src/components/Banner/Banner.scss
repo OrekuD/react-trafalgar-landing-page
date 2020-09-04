@@ -1,0 +1,44 @@
+.banner {
+  height: calc(100vh - 200px);
+  display: flex;
+
+  .content {
+    padding-top: 70px;
+
+    .title {
+      font-size: 44px;
+      font-family: "MuliBold";
+      width: 70%;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #7d7987;
+      font-family: "MuliLight";
+      margin: 20px 0;
+      width: 70%;
+    }
+
+    button {
+      width: 200px;
+      height: 56px;
+      border-radius: 28px;
+      background-color: #458ff6;
+      margin-top: 20px;
+      padding-bottom: 5px;
+
+      p {
+        font-family: "MuliBold";
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+
+  img {
+    height: calc(80vh - 100px);
+    width: auto;
+    object-fit: contain;
+    margin-left: 15px;
+  }
+}

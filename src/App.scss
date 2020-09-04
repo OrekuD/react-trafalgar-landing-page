@@ -34,3 +34,29 @@ html {
   flex-direction: column;
   padding: 0 100px;
 }
+
+button {
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.big-label {
+  font-family: "MuliBold";
+  font-size: 34px;
+}
+
+.small-label {
+  font-family: "MuliLight";
+  font-size: 16px;
+}
+
+.hr {
+  width: 54px;
+  height: 2px;
+  background-color: black;
+  margin: 20px 0;
+}
