@@ -11,6 +11,25 @@
     background-image: linear-gradient(to right, #5a98f2, #67c3f3);
     position: relative;
 
+    .big-label {
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      padding: 20px;
+      width: 100%;
+    }
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+
+    img {
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+
     .top-pattern {
       position: absolute;
       top: -18px;
@@ -43,6 +62,11 @@
       align-items: center;
       margin-top: 20px;
 
+      @media (max-width: 450px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       img {
         width: 140px;
         height: 140px;
@@ -61,12 +85,22 @@
         .small-label {
           width: 100%;
           margin-left: 0;
+          margin-bottom: 20px;
         }
       }
 
       .small-label {
         width: 45%;
         margin-left: 60px;
+
+        @media (max-width: 550px) {
+          width: 100%;
+          margin-left: 30px;
+        }
+
+        @media (max-width: 450px) {
+          margin-left: 0px;
+        }
       }
     }
   }
@@ -86,10 +120,18 @@
     .svg {
       &:first-of-type {
         margin-right: 100px;
+
+        @media (max-width: 450px) {
+          margin-right: 60px;
+        }
       }
 
       &:last-of-type {
         margin-left: 100px;
+
+        @media (max-width: 450px) {
+          margin-left: 60px;
+        }
       }
     }
   }

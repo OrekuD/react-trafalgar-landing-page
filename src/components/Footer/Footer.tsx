@@ -29,7 +29,7 @@ const Footer = () => (
     <div className="section">
       <p className="title">Links</p>
       {company.map((link, index) => (
-        <p className="small-label" key={index}>
+        <p className="link" key={index}>
           {link}
         </p>
       ))}
@@ -37,7 +37,7 @@ const Footer = () => (
     <div className="section">
       <p className="title">Support</p>
       {region.map((link, index) => (
-        <p className="small-label" key={index}>
+        <p className="link" key={index}>
           {link}
         </p>
       ))}
@@ -45,7 +45,7 @@ const Footer = () => (
     <div className="section">
       <p className="title">Links</p>
       {help.map((link, index) => (
-        <p className="small-label" key={index}>
+        <p className="link" key={index}>
           {link}
         </p>
       ))}

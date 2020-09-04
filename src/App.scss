@@ -51,7 +51,7 @@ html {
   }
 
   @media (max-width: 440px) {
-    padding: 0 5px;
+    padding: 0 10px;
   }
 }
 
@@ -94,6 +94,12 @@ button {
   font-size: 18px;
   color: #458ff6;
   background-color: transparent;
+  transition: 0.6s ease all;
+
+  &:hover {
+    color: white;
+    background-color: #458ff6;
+  }
 }
 
 .logo-container {
