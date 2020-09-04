@@ -36,6 +36,10 @@ header {
   .links {
     display: flex;
 
+    @media (max-width: 800px) {
+      display: none;
+    }
+
     .link {
       font-size: 18px;
       color: grey;

@@ -10,9 +10,7 @@ const Banner = () => (
         Trafalgar provides progressive, and affordable healthcare, accessible on
         mobile and online for everyone
       </p>
-      <button>
-        <p>Consult today</p>
-      </button>
+      <button>Consult today</button>
     </div>
     <img src={illustration} alt="illustration" />
   </div>

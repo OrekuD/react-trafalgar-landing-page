@@ -33,6 +33,22 @@ html {
   display: flex;
   flex-direction: column;
   padding: 0 100px;
+
+  @media (max-width: 1024px) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: 920px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 720px) {
+    padding: 0 35px;
+  }
+
+  @media (max-width: 620px) {
+    padding: 0 15px;
+  }
 }
 
 button {
@@ -52,6 +68,7 @@ button {
 .small-label {
   font-family: "MuliLight";
   font-size: 16px;
+  color: #7d7987;
 }
 
 .hr {
@@ -59,4 +76,17 @@ button {
   height: 2px;
   background-color: black;
   margin: 20px 0;
+}
+
+.btn {
+  width: 200px;
+  height: 56px;
+  border-radius: 28px;
+  border: 1px solid #458ff6;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  font-family: "MuliBold";
+  font-size: 18px;
+  color: #458ff6;
+  background-color: transparent;
 }
