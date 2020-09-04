@@ -46,25 +46,27 @@ const services = [
 ];
 
 const Services = () => (
-  <div className="services">
-    <p className="big-label">Our services</p>
-    <div className="hr" />
-    <p className="small-label">
-      We provide to you the best choiches for you. Adjust it to your health
-      needs and make sure your undergo treatment with our highly qualified
-      doctors you can consult with us which type of service is suitable for your
-      health
-    </p>
-    <div className="items">
-      {services.map(({ description, image, title }, index) => (
-        <div className="item" key={index}>
-          <img src={image} alt={title} />
-          <p className="title">{title}</p>
-          <p className="small-label">{description}</p>
-        </div>
-      ))}
+  <div className="container">
+    <div className="services">
+      <p className="big-label">Our services</p>
+      <div className="hr" />
+      <p className="small-label">
+        We provide to you the best choiches for you. Adjust it to your health
+        needs and make sure your undergo treatment with our highly qualified
+        doctors you can consult with us which type of service is suitable for
+        your health
+      </p>
+      <div className="items">
+        {services.map(({ description, image, title }, index) => (
+          <div className="item" key={index}>
+            <img src={image} alt={title} />
+            <p className="title">{title}</p>
+            <p className="small-label">{description}</p>
+          </div>
+        ))}
+      </div>
+      <button className="btn">Learn more</button>
     </div>
-    <button className="btn">Learn more</button>
   </div>
 );
 

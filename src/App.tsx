@@ -7,21 +7,19 @@ import {
   Services,
   Offers,
   Testimonial,
+  Articles,
 } from "./components";
 
-function App() {
-  return (
-    <div className="App">
-      <div className="container">
-        <Header />
-        <Banner />
-        <Services />
-        <Offers />
-        <Testimonial />
-      </div>
-      <Footer />
-    </div>
-  );
-}
+const App = () => (
+  <>
+    <Header />
+    <Banner />
+    <Services />
+    <Offers />
+    <Testimonial />
+    <Articles />
+    <Footer />
+  </>
+);
 
 export default App;

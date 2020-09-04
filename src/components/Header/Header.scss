@@ -4,35 +4,6 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-
-    p {
-      font-family: "MuliBold";
-    }
-
-    .logo {
-      width: 41px;
-      height: 41px;
-      display: grid;
-      place-items: center;
-      background-color: #458ff6;
-      border-radius: 50%;
-
-      p {
-        color: white;
-        font-size: 26px;
-      }
-    }
-
-    .logo-text {
-      font-size: 24px;
-      color: #233348;
-      margin-left: 10px;
-    }
-  }
-
   .links {
     display: flex;
 

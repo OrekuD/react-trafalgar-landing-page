@@ -19,22 +19,24 @@ const items = [
 ];
 
 const Offers = () => (
-  <div className="offers">
-    {items.map(({ title, image, description }, index) => (
-      <div className="item" key={index}>
-        <div className="content">
-          <p className="big-label">{title}</p>
-          <div className="hr" />
-          <p className="small-label">{description}</p>
-          {index === 0 ? (
-            <button className="btn">Learn more</button>
-          ) : (
-            <button className="btn">Download</button>
-          )}
+  <div className="container">
+    <div className="offers">
+      {items.map(({ title, image, description }, index) => (
+        <div className="item" key={index}>
+          <div className="content">
+            <p className="big-label">{title}</p>
+            <div className="hr" />
+            <p className="small-label">{description}</p>
+            {index === 0 ? (
+              <button className="btn">Learn more</button>
+            ) : (
+              <button className="btn">Download</button>
+            )}
+          </div>
+          <img src={image} alt={title} />
         </div>
-        <img src={image} alt={title} />
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
 );
 

@@ -35,50 +35,53 @@ const blue = "#458FF6";
 const Testimonial = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   return (
-    <div className="testimonial">
-      <div className="card">
-        <img src={greypattern} alt="Pattern" className="top-pattern" />
-        <img src={pattern} alt="Pattern" className="bottom-pattern" />
-        <p className="big-label">What our customers are saying</p>
-        <div className="hr" />
-        <div className="review">
-          <img src={profile} alt="Profile Image" />
-          <div>
-            <p className="name">{reviews[activeIndex].name}</p>
-            <p className="small-label">{reviews[activeIndex].role}</p>
+    <div className="container">
+      <div className="testimonial">
+        <div className="card">
+          <img src={greypattern} alt="Pattern" className="top-pattern" />
+          <img src={pattern} alt="Pattern" className="bottom-pattern" />
+          <p className="big-label">What our customers are saying</p>
+          <div className="hr" />
+          <div className="review">
+            <img src={profile} alt="Profile" />
+            <div>
+              <p className="name">{reviews[activeIndex].name}</p>
+              <p className="small-label">{reviews[activeIndex].role}</p>
+            </div>
+            <p className="small-label">“{reviews[activeIndex].review}”</p>
           </div>
-          <p className="small-label">“{reviews[activeIndex].review}”</p>
         </div>
-      </div>
-      <div className="active-review-indicator">
-        <button
-          className="svg"
-          onClick={() =>
-            setActiveIndex(
-              activeIndex === 0 ? reviews.length - 1 : activeIndex - 1
-            )
-          }
-        >
-          <ArrowLeft size={22} color={blue} />
-        </button>
-        {reviews.map((_, index) => (
-          <div
-            className="indicator"
-            style={{
-              backgroundColor: activeIndex === index ? blue : lightblue,
-            }}
-          />
-        ))}
-        <button
-          className="svg"
-          onClick={() =>
-            setActiveIndex(
-              activeIndex === reviews.length - 1 ? 0 : activeIndex + 1
-            )
-          }
-        >
-          <ArrowRight size={22} color={blue} />
-        </button>
+        <div className="active-review-indicator">
+          <button
+            className="svg"
+            onClick={() =>
+              setActiveIndex(
+                activeIndex === 0 ? reviews.length - 1 : activeIndex - 1
+              )
+            }
+          >
+            <ArrowLeft size={22} color={blue} />
+          </button>
+          {reviews.map((_, index) => (
+            <div
+              className="indicator"
+              key={index}
+              style={{
+                backgroundColor: activeIndex === index ? blue : lightblue,
+              }}
+            />
+          ))}
+          <button
+            className="svg"
+            onClick={() =>
+              setActiveIndex(
+                activeIndex === reviews.length - 1 ? 0 : activeIndex + 1
+              )
+            }
+          >
+            <ArrowRight size={22} color={blue} />
+          </button>
+        </div>
       </div>
     </div>
   );
