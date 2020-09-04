@@ -1,0 +1,33 @@
+.offers {
+  margin: 40px 0;
+
+  .item {
+    height: 400px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    &:first-of-type {
+      flex-direction: row-reverse;
+
+      .content {
+        padding-left: 100px;
+        padding-right: 0;
+      }
+    }
+
+    .content {
+      padding-right: 100px;
+
+      .big-label {
+        width: 70%;
+      }
+    }
+
+    img {
+      width: 45%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
