@@ -2,6 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  .pattern {
+    position: absolute;
+    left: -200px;
+    top: -30px;
+    height: 700px;
+    width: 700px;
+    z-index: -1;
+    @media (max-width: 720px) {
+      display: none;
+    }
+  }
 
   .small-label {
     width: 80%;

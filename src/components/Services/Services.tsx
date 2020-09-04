@@ -6,6 +6,7 @@ import consultation from "../../assets/images/consultation.png";
 import details from "../../assets/images/details.png";
 import emergency from "../../assets/images/emergency.png";
 import tracking from "../../assets/images/tracking.png";
+import element from "../../assets/images/element-2.png";
 
 const services = [
   {
@@ -48,6 +49,7 @@ const services = [
 const Services = () => (
   <div className="container">
     <div className="services">
+      <img src={element} alt="Bg" className="pattern" />
       <p className="big-label">Our services</p>
       <div className="hr" />
       <p className="small-label">

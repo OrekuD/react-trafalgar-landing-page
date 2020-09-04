@@ -2,14 +2,26 @@
   height: calc(100vh - 200px);
   display: flex;
   align-items: center;
+  position: relative;
+
+  .pattern {
+    position: absolute;
+    top: -20px;
+    left: -150px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
 
   @media (max-width: 700px) {
     height: calc(100vh - 300px);
   }
 
   .content {
-    // padding-top: 70px;
-
     p {
       width: 70%;
 
