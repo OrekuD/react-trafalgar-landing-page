@@ -12,4 +12,4 @@ A landing page for a one stop healthcare solution service built with React.
 
 ![Screenshot 2](https://github.com/OrekuD/react-trafalgar-landing-page/blob/master/src/assets/screenshots/2.png?raw=true)
 
-![Screenshot 2](https://github.com/OrekuD/react-trafalgar-landing-page/blob/master/src/assets/screenshots/2.png?raw=true)
+![Screenshot 2](https://github.com/OrekuD/react-trafalgar-landing-page/blob/master/src/assets/screenshots/3.png?raw=true)
