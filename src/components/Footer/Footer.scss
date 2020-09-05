@@ -25,6 +25,15 @@ footer {
     margin-bottom: 30px;
     max-width: 500px;
 
+    .logo-container {
+      .logo {
+        background-color: white;
+        p {
+          color: #5a98f2;
+        }
+      }
+    }
+
     .link {
       font-family: "MuliLight";
       font-size: 16px;
